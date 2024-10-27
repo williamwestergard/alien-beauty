@@ -38,6 +38,15 @@ body {
     --font-color-black:#000000;
 }
 
+main {
+  animation:fadeIn 2s forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fadeIn {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
 header {
     z-index: 10;
     display:flex;
@@ -47,6 +56,15 @@ header {
     padding:15px 75px 0 75px;
     position: relative;
     top:5vh;
+    opacity:0%;
+    animation:navfadeIn 2s forwards;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes navfadeIn {
+  0% {opacity:0%;}
+  100% {opacity:100%;}
 }
 .main-date {
     padding:15px 75px 0 75px;
@@ -103,6 +121,12 @@ nav ul li a:hover {
     background-position: 0%;
     background-size: cover;
     margin:auto;
+    animation:zoomIn 2s forwards;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes zoomIn {
+    0% {transform: scale(0.95);border-radius: 200px;width:82vw; height:73vh;}
+    100% {transform: scale(1); border-radius: 45px;filter:blur(0px);width:97vw; height:94vh;}
   }
   
   .alien-beauty {
