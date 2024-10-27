@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #747e63;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4e5640;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4534;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -42,7 +63,7 @@ nav ul{
     gap:35px;
 }
 h1 a {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color:var(--font-color-green);
     text-decoration: none;
 }
@@ -100,7 +121,7 @@ nav ul li a:hover {
     background-color: #a04126;
     width:65vh;
     height:auto;
-    border-radius: 25px;
+    border-radius: 25px 0px 0px 0px;
     padding:35px;
   }
   .main-aside-1 h2 {
@@ -110,6 +131,89 @@ nav ul li a:hover {
     line-height: 2.5vh;
     padding:0 35px 0 0;
    }
+
+   .section-2 {
+    top:10vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height:30vh;
+    margin-left:10vh;
+    margin-bottom:50vh;
+   }
+   .section-2 h2 {
+    font-size: 4rem;
+    line-height: 7vh;
+   }
+   .section-2 p {
+    padding:0 15vh 0 15vh;
+    line-height: 2.7vh;
+   }
+
+   .section-2-article {
+    overflow: hidden;
+    background-color: #a04126;
+    display: flex;
+    width:60vw;
+    border-radius: 45px;
+   }
+   .section-2-img {
+    width:auto;
+    height:25vh;
+
+   }
+
+   .section-2-info {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:5vh;
+   }
+
+
+   .section-2-star-img {
+    position: relative;
+    top:-2.5vh;
+    padding:5vh;
+    width:35vh;
+    margin-left:0;
+    animation:spin 10s infinite;
+    animation-timing-function: linear; 
+   }
+
+
+   @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive */
 @media all and (max-width:1400px) {
     .main-aside-1 {
         position: absolute;
