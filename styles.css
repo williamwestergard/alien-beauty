@@ -71,7 +71,7 @@ header {
     position: absolute;
     bottom:5vh;
     color:var(--font-color-green);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vh, 1.2rem);
     letter-spacing: 1px;
   }
 nav ul{
@@ -81,7 +81,7 @@ nav ul{
     gap:35px;
 }
 h1 a {
-    font-size: 1.6rem;
+  font-size: clamp(1.3rem, 2vh, 1.6rem);
     color:var(--font-color-green);
     text-decoration: none;
 }
@@ -89,7 +89,7 @@ nav ul {
     list-style-type: none;
 }
 nav ul li a {
-    font-size: 1.1rem;
+  font-size: clamp(.9rem, 2vh, 1.1rem);
     color:var(--font-color-green);
     text-decoration: none;
 }
@@ -111,7 +111,7 @@ nav ul li a:hover {
 
   .main-image {
     overflow: hidden;
-    top:-3vh;
+    top:-4.5vh;
     position: relative;
     width:97vw;
     height:94vh;
@@ -125,7 +125,7 @@ nav ul li a:hover {
     animation-timing-function: ease-in-out;
   }
   @keyframes zoomIn {
-    0% {transform: scale(0.95);border-radius: 200px;width:82vw; height:73vh;}
+    0% {transform: scale(0.92);border-radius: 200px;width:85vw; height:75vh;}
     100% {transform: scale(1); border-radius: 45px;filter:blur(0px);width:97vw; height:94vh;}
   }
   
@@ -140,7 +140,8 @@ nav ul li a:hover {
   .main-aside-1 {
     position: absolute;
     top:90%;
-    left:85%;
+    left:95%;
+    margin-left:10vh;
     transform: translate(-50%, -50%);
     background-color: #a04126;
     width:65vh;
@@ -149,11 +150,14 @@ nav ul li a:hover {
     padding:35px;
   }
   .main-aside-1 h2 {
+  margin-top:-15px;
    margin-bottom:10px;
+   font-size:1.2rem;
   }
   .main-aside-1 p {
     line-height: 2.5vh;
-    padding:0 35px 0 0;
+    font-size:.9rem;
+    padding:0 15px 0 0;
    }
 
    .section-2 {
@@ -172,8 +176,9 @@ nav ul li a:hover {
     line-height: 7vh;
    }
    .section-2 p {
-    padding:0 15vh 0 15vh;
+    padding:0 15px 0 35px;
     line-height: 2.7vh;
+    font-size:.9rem;
    }
 
    .section-2-article {
