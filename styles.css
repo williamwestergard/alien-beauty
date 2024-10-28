@@ -235,7 +235,15 @@ nav ul li a:hover {
         transform:rotate(360deg);
     }
 }
-
+.contact .section-2-star-img  {
+  position: relative;
+  top:5vh;
+  padding:5vh;
+  width:27vh;
+  margin-left:0;
+  animation:spin 10s infinite;
+  animation-timing-function: linear; 
+ }
 
 
 
@@ -316,6 +324,36 @@ footer {
   }
 
 
+
+.contact {
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+
+.contact button {
+  font-weight: 500;
+  font-size: 1.1rem;
+  width:500px;
+  background-color: #a04126;
+  border: 1px solid #a04126;
+  border-radius: 25px;
+  margin-bottom:7px;
+  padding:20px 35px 20px 35px;
+}
+.contact button:hover {
+  background-color: transparent;
+  border: 1px solid var(--font-color-green);
+  color:var(--font-color-green);
+  cursor:pointer;
+  transition: .2s;
+}
 
 
 
