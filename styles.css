@@ -148,6 +148,20 @@ nav ul li a:hover {
     border-radius: 25px 0px 0px 0px;
     padding:55px;
   }
+@media all and (min-width:1650px) {
+  .main-aside-1 {
+    position: absolute;
+    top:92%;
+    left:85%;
+    transform: translate(-50%, -50%);
+    background-color: #a04126;
+    width:650px;
+    height:auto;
+    border-radius: 25px 0px 0px 0px;
+    padding:55px;
+  }
+}
+
   .main-aside-1 h2 {
   margin-top:-15px;
    margin-bottom:10px;
@@ -172,7 +186,7 @@ nav ul li a:hover {
    }
    .section-2 h2 {
     font-size: 4rem;
-    line-height: 7vh;
+    line-height: 8vh;
    }
    .section-2 p {
     padding:0 15px 0 35px;
@@ -312,18 +326,28 @@ footer {
 
 
   /* Responsive */
-@media all and (max-width:1400px) {
+@media all and (max-width:1650px) {
     .main-aside-1 {
         position: absolute;
-        top:90%;
-        left:80%;
+        top:88%;
+        left:85%;
         transform: translate(-50%, -50%);
         background-color: #a04126;
-        width:65vh;
+        width:62vh;
         height:auto;
         border-radius: 25px;
         padding-right:85px;
       }
+      .main-aside-1 h2 {
+        margin-top:-25px;
+         margin-bottom:10px;
+         font-size:1.1rem;
+        }
+        .main-aside-1 p {
+          line-height: 2.8vh;
+          font-size:.9em;
+          padding:0 15px 0 0;
+         }
 }
 @media all and (max-width:1050px) {
     .main-aside-1 {
@@ -337,6 +361,16 @@ footer {
         border-radius: 25px;
         padding-right:145px;
       }
+      .main-aside-1 h2 {
+        margin-top:-25px;
+         margin-bottom:10px;
+         font-size:1.1rem;
+        }
+        .main-aside-1 p {
+          line-height: 2.2vh;
+          font-size:.8em;
+          padding:0 0px 0 0;
+         }
 }
 @media all and (max-width:800px) {
     .alien-beauty {
@@ -407,6 +441,7 @@ header h1 a {
             margin-top:5vh;
             text-align: left;
             align-self: flex-start;
+            line-height: 60px;
             padding:0 0 0 25px;
         }
           .section-2-info {
