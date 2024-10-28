@@ -55,7 +55,7 @@ header {
     justify-content: space-between;
     padding:15px 75px 0 75px;
     position: relative;
-    top:clamp(15px, 5vh, 30px);
+    top:clamp(15px, 5vh, 40px);
     opacity:0%;
     animation:navfadeIn 2s forwards;
     animation-delay: 1s;
@@ -81,7 +81,7 @@ nav ul{
     gap:35px;
 }
 h1 a {
-  font-size: clamp(1.3rem, 2vh, 1.6rem);
+  font-size: clamp(1.3rem, 4vh, 1.6rem);
     color:var(--font-color-green);
     text-decoration: none;
 }
@@ -111,7 +111,7 @@ nav ul li a:hover {
 
   .main-image {
     overflow: hidden;
-    top:-4vh;
+    top:-3vh;
     position: relative;
     width:97vw;
     height:94vh;
@@ -225,11 +225,81 @@ nav ul li a:hover {
 
 
 
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:300px;
+  background-color: #a04126;
+  color:black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding:70px;
+  flex-wrap:wrap;
+}
 
+.footer__headline {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom:10px;
+}
 
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+  font-weight: 500;
+}
 
-
-
+  @media all and (max-width:750px) {
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height:300px;
+      background-color: #a04126;
+      color:black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: baseline;
+      padding:70px;
+      flex-wrap:wrap;
+    }
+    .footer__headline {
+      flex:1;
+      font-size: 1.5rem;
+    }
+  }
+  @media all and (max-width:600px) {
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height:200px;
+      background-color: #a04126;
+      color:black;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      align-items: baseline;
+      padding:30px;
+      flex-wrap:wrap;
+    }
+    .footer__headline {
+      font-size: 1rem;
+    }
+    .footer__list {
+      line-height: 22px;
+      font-size: .9rem;
+    }
+  }
 
 
 
