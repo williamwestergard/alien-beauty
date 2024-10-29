@@ -624,9 +624,9 @@ nav ul li a:hover {
 
 
 
-@media all and (max-width: 1300px) {
+@media all and (max-width: 1500px) {
   .about {
-    margin-top:20vh;
+    margin-top:15vh;
     width:100%;
     height:90vh;
     display:flex;
@@ -639,6 +639,7 @@ nav ul li a:hover {
     justify-content: space-evenly;
   }
   .about-info-container {
+    margin-top:65px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -649,23 +650,24 @@ nav ul li a:hover {
     color:#a04126;
     padding:25px;
     width:600px;
-    line-height: 26px;
+    font-size:0.9rem;
+    line-height: 22px;
   }
   .about-slogan{
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
     background-color:#a04126;
-    height:100px;
+    height:30px;
     border-radius: 45px;
     color:black;
-    padding:45px;
-    width:400px;
+    padding:40px;
+    width:300px;
   }
   .astronaut-2 {
     width:auto;
-    height:65vh;
+    height:85vh;
     border-radius: 45px;
   }
 }
@@ -938,7 +940,7 @@ footer {
   .main-aside-1 {
     position: absolute;
     top: 88%;
-    left: 85%;
+    left: 86%;
     transform: translate(-50%, -50%);
     background-color: #a04126;
     width: 62vh;
@@ -954,7 +956,7 @@ footer {
   .main-aside-1 p {
     line-height: 2.8vh;
     font-size: 0.9em;
-    padding: 0 15px 0 0;
+    padding: 0 10px 0 0;
   }
 }
 @media all and (max-width: 1050px) {
