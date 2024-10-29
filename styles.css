@@ -767,7 +767,7 @@ nav ul li a:hover {
 
 @media all and (max-width: 600px) {
   .about {
-    margin-top:35vh;
+    margin-top:30vh;
     width:100%;
     height:auto;
     display:flex;
