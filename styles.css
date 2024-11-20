@@ -238,11 +238,33 @@ nav ul li a:hover {
 
 
 
+@media all and (min-width: 1650px) {
+  .image-border-left{
+    position: absolute;
+    bottom:-1px;
+    right:603px;
+    width: 73px;
+    height:73px;
+    background:transparent;
+    border-radius:50%;
+    box-shadow: 30px 30px 0 #150a04;
+    animation: borderAnimation4 2s forwards;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes borderAnimation4 {
+    0% {
+      right:530px;
+    }
+    100% {
+      right:566px;
+    
+    }
+  }
+  
+ }
 
 
-
-
-@media all and (min-width: 1680px) {
+@media all and (min-width: 1750px) {
   .main-aside-1 {
     overflow: hidden;
     position: absolute;
@@ -473,7 +495,73 @@ nav ul li a:hover {
   transition: 0.2s;
 }
 
-@media all and (max-width: 1460px) {
+/* Macbook laptop */
+@media all and (max-width: 1550px) {
+
+.image-border-top{
+  position: absolute;
+  bottom:205px;
+  right:0px;
+  width: 73px;
+  height:73px;
+  background:transparent;
+  border-radius:50%;
+  box-shadow: 30px 30px 0 #150a04;
+}
+
+.image-border-left{
+  position: absolute;
+  bottom:-1px;
+  right:432px;
+  width: 73px;
+  height:73px;
+  background:transparent;
+  border-radius:50%;
+  box-shadow: 30px 30px 0 #150a04;
+  animation: borderAnimation3 2s forwards;
+  animation-timing-function: ease-in-out; 
+}
+@keyframes borderAnimation3 {
+  0% {
+    right:410px;
+  }
+  100% {
+    right:432px;
+  
+  }
+}
+
+
+.aside-border-left {
+  overflow: hidden;
+  z-index:10;
+  position: absolute;
+  bottom:32px;
+  right:391px;
+  width: 73px;
+  height:73px;
+  background:transparent;
+  border-radius:50%;
+  box-shadow: -30px 30px 0 #150a04;
+}
+.aside-border-top {
+  z-index:10;
+  position: absolute;
+  bottom:152px;
+  right:45px;
+  width: 73px;
+  height:73px;
+  background:transparent;
+  border-radius:50%;
+  box-shadow: 30px -30px 0 #150a04;
+}
+
+
+}
+  
+
+
+@media all and (max-width: 1260px) {
 
   .image-border-top, .image-border-left, .aside-border-top, .aside-border-left {
     display:none;
@@ -1120,7 +1208,7 @@ footer {
     background-color: #a04126;
     width: 62vh;
     height: auto;
-    border-radius: 25px;
+    border-radius: 45px;
     padding-right: 85px;
   }
   .main-aside-1 h2 {
