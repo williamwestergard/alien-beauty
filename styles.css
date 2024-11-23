@@ -398,17 +398,17 @@ footer {
 }
 .contact h2 {
   color:#a04126;
-  font-size: 1.3rem;
-  line-height: 30px;
+  font-size: clamp(1.1rem, 1.3vw, 1.4rem);
+  line-height:clamp(1.6rem, 1.7vw, 2.1rem);
   font-weight: 400;
-  margin-bottom:50px;
+  margin-bottom:6vh;
   text-align: center;
 }
 
 .contact button {
   font-weight: 500;
-  font-size: 1.1rem;
-  width: 350px;
+  font-size: clamp(.9rem, 1vw, 1.1rem);
+  width:clamp(300px, 19vw, 350px);
   background-color: #a04126;
   border: 1px solid #a04126;
   border-radius: 25px;
