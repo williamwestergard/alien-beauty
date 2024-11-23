@@ -27,9 +27,10 @@
       }
       .alien-beauty {
         width: 43vh;
-        top: 50%;
+        top: 53%;
       }
       .main-aside-1 {
+        text-align: center;
         bottom:0;
         right:0;
         width: 100%;
@@ -43,7 +44,7 @@
       
       .section-2 {
         text-align: center;
-        top: 92vh;
+        top: 90vh;
         flex-direction: column;
         justify-content: center;
         align-content: center;
@@ -60,17 +61,17 @@
       
 .section-2 h2 {
     margin-top:3vh;
-    font-size:clamp(2rem, 2vw, 2.3rem);
-    line-height: clamp(5.5vh, 3vw, 5.5vh);
+    font-size:clamp(2.2rem, 2vw, 2.3rem);
+    line-height: 5.5vh;
   }
   .explore-about-us {
-    line-height: 4.7vh;
+    line-height: 5.5vh;
     font-size:1.1rem;
   }
   .section-2 p {
     padding:1vw 5vw 3vh 5vw;
-    line-height: 2.5vh;
-    font-size:.7rem;
+    line-height: 2.9vh;
+    font-size:.8rem;
   }
   
 .section-2-article {
@@ -132,8 +133,9 @@
     padding:0 25vw;
     width:8rem;
     position: relative;
-    left:-25vw;
+    left:0vw;
     gap: 0px;
+    align-self: center;
     justify-content:space-evenly;
   }
   
