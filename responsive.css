@@ -162,6 +162,54 @@
     margin-top: 1vh;
     padding: 2.2vh;
   }
+  .about {
+    margin-top:20vh;
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10vh;
+  }
+  .about .section-1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .about-info-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:25px;
+  }
+  .about-info{
+    display:flex;
+    flex-direction: column;
+    color:#a04126;
+    padding:25px;
+    width:90%;
+    line-height: 20px;
+    font-size:.8rem;
+   
+  }
+  .about-slogan{
+    font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#a04126;
+    height:60px;
+    position: relative;
+    left:5vw;
+    border-radius: 45px;
+    color:black;
+    padding:25px;
+    width:240px;
+  }
+  .astronaut-2 {
+    display:none;
+  }
+
+
   
 
 footer {

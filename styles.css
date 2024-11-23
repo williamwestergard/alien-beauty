@@ -422,3 +422,52 @@ footer {
   cursor: pointer;
   transition: 0.2s;
 }
+
+
+
+.about {
+  margin-top:clamp(6rem, 3vw, 4rem);
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  margin-bottom:13vh;
+}
+.about .section-1 {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.about-info-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top:-40px;
+}
+.about-info{
+  display:flex;
+  flex-direction: column;
+  color:#a04126;
+  padding:25px;
+  width:600px;
+  line-height:clamp(15px, 1.5vw, 25px);
+  font-size:clamp(.7rem, 1vw, 1rem);
+}
+.about-slogan{
+  font-size:clamp(1.5rem, 2vw, 2.8rem);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#a04126;
+  height:clamp(50px, 2vw, 100px);
+  border-radius: 45px;
+  color:black;
+  padding:clamp(25px, 2.5vw, 45px);
+  width:clamp(280px, 20vw, 500px);
+}
+.astronaut-2 {
+  width:30vw;
+  height:auto;
+  border-radius: 45px;
+}
