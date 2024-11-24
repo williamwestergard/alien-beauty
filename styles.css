@@ -328,6 +328,7 @@ nav ul li a:hover {
   width: 400px;
   background-color: #a04126;
   border: 1px solid #a04126;
+  color:var(--font-color-black);
   border-radius: 25px;
   margin-top: 30px;
   padding: 20px 35px 20px 35px;
